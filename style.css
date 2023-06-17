@@ -1,0 +1,77 @@
+:root{
+    --color:rgb(173, 160, 248);
+}
+
+body{
+    background-color: var(--color);
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 40px;
+    font-family: sans-serif;
+    border-radius: 7px;
+}
+
+.userInput{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--color);
+    border-radius: 3px;
+    font-size: 19px;
+}
+
+.searchBtn{
+    background-color: var(--color);
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 23%;
+    margin-left: 6px;
+    border-bottom: 3px solid var(--color);
+    border-top: 3px solid var(--color);
+    cursor: pointer;
+}
+
+.result{
+    margin-top:30px;
+    position: relative;
+    display: none;
+}
+
+.container.active .result{
+    display: block;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fas{
+    color: var(--color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.pronun{
+    font-size: 13px;
+    color: gray;
+    position: absolute;
+    top: 65px;
+}
+
+.desc{
+    color: rgb(48, 48, 48);
+}
